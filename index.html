@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Stock information</title>
+        <script src="bundle.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h2>Stock daily change information</h1>
+        </div>
+        <div class="search-bar">
+            <div class="form-container">
+                <form id="form" action="">
+                    <div id="stock" class="form-item">
+                        <input id="stock-input" required type="text" placeholder="Enter stock symbol like AAPL or FB or GOOG">
+                    </div>
+                    <div class="horizontal-spacer"></div>
+                    <div>
+                        <button type="reset">X</button>
+                        <button id="submit" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <div id="error-message" class="error-message" style="display: none;">There was a problem while loading data</div>
+            <div class="stock-container" id="cards-container">
+            </div>
+        </div>
+    </body>
+</html>
